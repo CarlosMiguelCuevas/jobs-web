@@ -1,0 +1,63 @@
+extends ../layout
+
+block content
+	//vars
+	- var images_url = "/images/internship/" 
+	//page
+	header.row.internship-header
+		div.small-12.large-5.columns
+			h1.shadow-text
+				p INTERN- <br>SHIP
+			h1.clear-text 
+				p What is <br> NS Academy?
+		div.small-12.large-7.columns.right
+			img(src=images_url + "academy.png")
+	div.row
+		div.small-12.colums
+			p.text-body Este programa surgió de la idea de apoyar al talento joven a adquirir buenas prácticas y experiencia para mejorar su currículum, y a la vez prepararse para entrevistas con clientes con necesidades de alta calidad en software.
+	br
+	div.row
+		div.small-12.large-3.columns.gray-background.complete
+			h1.subtitle Goals
+			p.text-body En Nearsoft Academy no sólo se enseñan cuestiones técnicas, sino también sobre cómo manejar currículums, entrevistas, aportaciones a proyectos open source, prototipos, documentación, etc.
+		div.small-12.large-9.columns
+			img(src=images_url + "intern_2.jpg")
+	div.row.center
+		div.small-12.colums
+			h1.subtitle how to apply?
+			p.text-body.text-body La duración está pensada en 6 meses, durante los cuales estarías trabajando bajo la supervisión de un mentor en algún objetivo personal: sea especializarte en alguna tecnología en específico o aplicar para una de nuestras vacantes.
+	div.row
+		div.small-12.colums
+			h2.subtitle Requisitos
+			ul.text-body
+				li Estar en el último semestre (o equivalente) de tu carrera de sistemas computacionales (o afín) o ser recién egresado.
+				li Tener un inglés avanzado.
+				li Presentar y aprobar el logic test (indispensable aprobar para cualquier developer o intern que ingrese a Nearsoft).
+				li Tomar y aprobar entrevista en inglés.
+				li Tener una entrevista con los coordinadores del proyecto y con posibles mentores.
+	div.row
+		div.small-12.columns.separator.gray-background
+	<br>	
+	div.row.gray-background
+		div.small-12.colums
+			div.small-12.large-6.columns.right
+				img(src=images_url + "calendario.png")
+			div.small-12.large-6.columns
+				p Proxima 
+				|convovcatoria 
+				|febrero 2017
+				|<span class=button>contact us</span>
+	<br>
+	div.row
+		div.small-12.columns.separator.gray-background		
+	div.row
+		div.small-12.colums
+			h1.subtitle Otros programas
+	div.row
+		div.gray-background.separator
+
+		img(src=images_url + "ASNlogo.png").small-12.large-4.colums
+		img(src=images_url + "Apprentice.png").small-12.large-4.colums
+		img(src=images_url + "SOFE.png").small-12.large-4.colums
+		
+		div.gray-background.separator
