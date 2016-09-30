@@ -7,7 +7,7 @@
     position: absolute
     top: 160px
     font-family: helvetica
-    letter-spacing: 12px
+    letter-spacing: 5px
     p
       line-height: 140%
   h1.shadow-text
@@ -16,6 +16,7 @@
     font-weight: bold
     p
       line-height: 120%
+
 
 .gray-background
   background-color: $light-gray-color
@@ -30,21 +31,72 @@
 .complete
   height: 100%
 
-li 
-  list-style-type: square
+.logo-container
+  text-align: right
+  @media(max-width: 1024px)
+    text-align: center
+
+li
+  list-style-type: none
 
 .right
   text-align: right
 
 .button
-  border: 1px solid $dark-blue-color-3
+  border: 3px solid $dark-blue-color-3
+  background: none
+  color: $dark-blue-color-3
+  font-weight: bold
+  padding: 6px 10px
 
 .text-body
+  padding-left: 15px
   color: $gray-dark-color
-  font-size: 22px
-  font-weight: bold
-  line-height: 100%
+  font-size: 20px
+  line-height: 120%
+  text-align: justify
 
 .center
   text-align: center
 
+.goals
+  @media(min-width: 1024px)
+    display: inline-flex
+  margin-bottom: 80px
+  .goals-description
+    h1
+      font-size: 4em
+    margin-right: 15px
+    padding: 30px
+
+    p
+      padding-left: 0
+      text-align: left
+
+    .goals-image
+
+.how-to-apply
+  h1, h2
+    color: $yelowish-color
+  h1
+    font-size: 5em
+  h2
+    margin-top: 20px
+    font-size: 2em
+  ul
+    margin-left: 0
+  li
+    margin-top: 20px
+    display: inline-flex
+    span
+      margin-left: 0.5em
+      display: block
+  li:before
+    content: '\25FB'
+
+.convocatoria
+  p
+    color: $dark-blue-color-3
+    font-size: 28px
+    font-weight: bold
+    line-height: 29px
