@@ -17,9 +17,8 @@ block content
 			div.small-12.colums
 				p.text-body Este programa surgió de la idea de apoyar al talento joven a adquirir buenas prácticas y experiencia para mejorar su currículum, y a la vez prepararse para entrevistas con clientes con necesidades de alta calidad en software.
 		br
-		div.row
+		div.goals-container.row
 			div.goals
-
 				div.goals-description.small-12.large-4.gray-background
 					h1.subtitle Goals
 					p.text-body En Nearsoft Academy no sólo se enseñan cuestiones técnicas, sino también sobre cómo manejar currículums, entrevistas, aportaciones a proyectos open source, prototipos, documentación, etc.
@@ -29,7 +28,7 @@ block content
 			div.small-11.small-centered.colums
 				h1.subtitle How to apply?
 				p.text-body.text-body La duración está pensada en 6 meses, durante los cuales estarías trabajando bajo la supervisión de un mentor en algún objetivo personal: sea especializarte en alguna tecnología en específico o aplicar para una de nuestras vacantes.
-		div.how-to-apply.row
+		div.how-to-apply.requisitos.row
 			div.small-10.medium-9.small-centered.colums
 				h2.subtitle Requisitos
 				ul.text-body
@@ -60,13 +59,12 @@ block content
 		div.row
 			div.small-12.columns.separator.gray-background
 		div.row
-			div.small-12.colums
+			div.programas-title.small-12.colums
 				h1.subtitle Otros programas
-		div.row
+		div.programas-container.row
 			div.gray-background.separator
 
 			div.programas
-			a(href="#" data-reveal-id="modal1") hi
 				img(src=images_url + "ASNlogo.png" data-reveal-id="modal1").small-12.large-4.colums
 				img(src=images_url + "Apprentice.png" data-reveal-id="modal2").small-12.large-4.colums
 				img(src=images_url + "SOFE.png" data-reveal-id="modal3").small-12.large-4.colums
@@ -74,4 +72,3 @@ block content
 			div.gray-background.separator
 
 	div#modal1.reveal(aria-labelledby="modalTitle" aria-hidden="true" data-reveal role="dialog")
-		h1 hola
