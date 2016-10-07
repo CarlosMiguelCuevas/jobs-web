@@ -17,12 +17,14 @@ block content
 			div.small-12.colums
 				p.text-body Este programa surgió de la idea de apoyar al talento joven a adquirir buenas prácticas y experiencia para mejorar su currículum, y a la vez prepararse para entrevistas con clientes con necesidades de alta calidad en software.
 		br
-		div.goals.row
-			div.goals-description.small-12.large-4.gray-background
-				h1.subtitle Goals
-				p.text-body En Nearsoft Academy no sólo se enseñan cuestiones técnicas, sino también sobre cómo manejar currículums, entrevistas, aportaciones a proyectos open source, prototipos, documentación, etc.
-			div.goals-image.small-12.large-8
-				img(src=images_url + "intern_2.jpg")
+		div.row
+			div.goals
+
+				div.goals-description.small-12.large-4.gray-background
+					h1.subtitle Goals
+					p.text-body En Nearsoft Academy no sólo se enseñan cuestiones técnicas, sino también sobre cómo manejar currículums, entrevistas, aportaciones a proyectos open source, prototipos, documentación, etc.
+				div.goals-image.small-12.large-8
+					img(src=images_url + "intern_2.jpg")
 		div.how-to-apply.row.center
 			div.small-11.small-centered.colums
 				h1.subtitle How to apply?
@@ -53,7 +55,7 @@ block content
 						| PRÓXIMA</br>
 						| CONVOCATORIA</br>
 						| Febrero 2017
-					<span class=button>Contact us</span>
+					<span class=button><a href="mailto:community@nearsoft.com?Subject=Internship">Contact us</a></span>
 		<br>
 		div.row
 			div.small-12.columns.separator.gray-background
@@ -63,8 +65,13 @@ block content
 		div.row
 			div.gray-background.separator
 
-			img(src=images_url + "ASNlogo.png").small-12.large-4.colums
-			img(src=images_url + "Apprentice.png").small-12.large-4.colums
-			img(src=images_url + "SOFE.png").small-12.large-4.colums
+			div.programas
+			a(href="#" data-reveal-id="modal1") hi
+				img(src=images_url + "ASNlogo.png" data-reveal-id="modal1").small-12.large-4.colums
+				img(src=images_url + "Apprentice.png" data-reveal-id="modal2").small-12.large-4.colums
+				img(src=images_url + "SOFE.png" data-reveal-id="modal3").small-12.large-4.colums
 
 			div.gray-background.separator
+
+	div#modal1.reveal(aria-labelledby="modalTitle" aria-hidden="true" data-reveal role="dialog")
+		h1 hola

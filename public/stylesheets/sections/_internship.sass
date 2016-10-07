@@ -45,10 +45,10 @@ li
 .button
   border: 3px solid $dark-blue-color-3
   background: none
-  color: $dark-blue-color-3
   font-weight: bold
   padding: 6px 10px
-
+  a
+    color: $dark-blue-color-3
 .text-body
   padding-left: 15px
   color: $gray-dark-color
@@ -100,3 +100,20 @@ li
     font-size: 28px
     font-weight: bold
     line-height: 29px
+
+  @media(min-width: 500px)
+    display: flex
+    align-items: center
+
+  @media(max-width: 500px)
+    div
+      text-align: center
+    img
+      height: 150px
+
+.programas
+  margin: 20px
+
+  img
+    background-color: $light-gray-color
+    border: 3px solid white
