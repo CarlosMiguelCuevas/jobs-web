@@ -4,5 +4,6 @@
     let a = (data)  => {
       console.log("hi");
     }
+  $(document).foundation();
   });
 })();

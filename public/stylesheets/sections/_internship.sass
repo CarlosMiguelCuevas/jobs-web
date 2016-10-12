@@ -1,5 +1,6 @@
 .internship-header
   margin-top: 96px
+  margin-bottom: 30px
   h1.clear-text
     color: $orange-color-4
     font-size: 100px
@@ -17,6 +18,14 @@
     p
       line-height: 120%
 
+  @media(max-width: 1024px)
+    h1.clear-text
+      font-size: 10vw
+    h1.shadow-text
+      font-size: 12vw
+
+.introduction
+  margin-bottom: 20px
 
 .gray-background
   background-color: $light-gray-color
@@ -32,15 +41,16 @@
   height: 100%
 
 .logo-container
+  padding: 0
   text-align: right
-  @media(max-width: 1024px)
-    text-align: center
 
 li
   list-style-type: none
 
 .right
   text-align: right
+.left
+  text-align: left
 
 .button
   border: 3px solid $dark-blue-color-3
@@ -73,13 +83,13 @@ li
       padding-left: 0
       text-align: left
 
-    .goals-image
 
 .how-to-apply
   h1, h2
     color: $yelowish-color
   h1
     font-size: 5em
+    margin-bottom: 30px
   h2
     margin-top: 20px
     font-size: 2em
@@ -98,6 +108,7 @@ li
   margin-bottom: 80px
 
 .convocatoria
+  margin: 10px 0
   p
     color: $dark-blue-color-3
     font-size: 28px
@@ -114,10 +125,10 @@ li
     img
       height: 150px
 
-
-
 .programas-title
   margin-top: 60px
+  h1
+    font-size: 4.25em
 
 .programas-container
   margin-bottom: 180px
@@ -127,3 +138,76 @@ li
     img
       background-color: $light-gray-color
       border: 3px solid white
+
+.pop-up
+  text-align: center
+
+  .circles
+    text-align: left
+    margin: 22px
+
+  .circle
+    border-radius: 20px
+    height: 15px
+    width: 15px
+    display: inline-block
+    margin: 4px
+    &-red
+      border: 1px solid red
+    &-yellow
+      border: 1px solid #ffbf00
+    &-green
+      border: 1px solid green
+
+  .frame
+    border: 2px solid $gray-dark-color
+    border-radius: 5px
+    margin: 40px 50px
+    color: #989999
+
+  p
+    line-height: 1.4
+    text-align: justify
+  img
+    max-width: 500px
+
+  .info
+    padding: 40px 0 100px
+    font-size: 26px
+
+    .subtitle
+      margin-top: 50px
+      font-weight: bold
+      margin-bottom: 0
+
+.orange-separator
+  height: 2px
+  background-color: $orange-color-4
+  margin-bottom: 12px
+
+.requisitos-sofe
+  text-align: left
+  .requisito-sofe
+    display: inline-flex
+    align-items: center
+    margin-top: 20px
+
+    p
+      line-height: 24px
+      color: #919292
+      display: inline
+      margin-bottom: 0
+    div
+      .rounded-square
+        margin-right: 30px
+        height: 28px
+        width: 28px
+        border: 3px solid $gray-dark-color
+        border-radius: 9px
+
+  .sofe-apply-info
+    margin: 30px 0 100px
+
+  .contacto
+    p
+      text-align: center
