@@ -1,7 +1,7 @@
 // Main js file
 (function(){
   $(document).ready(function(){
-
+    
     $(document).foundation();
     var windowHeight = $(window).height();
     var height = windowHeight - $('.top-menu').height();
